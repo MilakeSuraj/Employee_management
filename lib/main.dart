@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import 'providers/employee_provider.dart';
 import 'screens/add_employee_screen.dart';
 import 'screens/employee_details_screen.dart';
-import 'screens/home_screen.dart';  // Import your HomeScreen
-import 'screens/splash_screen.dart'; // Import your SplashScreen
+import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -26,10 +26,9 @@ class MyApp extends StatelessWidget {
         ),
         home: const SplashScreen(), // Set SplashScreen as the initial screen
         routes: {
-          '/home': (context) => const HomeScreen(), // Define route for HomeScreen
+          '/home': (context) => const HomeScreen(), 
           '/add': (context) => const AddEmployeeScreen(),
           '/details': (context) => const EmployeeDetailsScreen(),
-          // You can add routes for other screens here
         },
       ),
     );
